@@ -1,13 +1,19 @@
 package entidades;
 
-public abstract class Pessoa {
-    protected int id;
-    protected String nome;
-    protected String contato;
-    protected String cpf;
+public  class Pessoa {
+    private int id;
+    private String nome;
+    private String contato;
+    private String cpf;
 
     // Construtor padrão
-    public Pessoa() {
+    public Pessoa(String nome) {
+    	this.nome =nome;
+    }
+    
+    public Pessoa(String nome,String cpf) {
+    	this.nome =nome;
+    	this.cpf=cpf;
     }
 
     // Construtor sobrecarregado
@@ -17,6 +23,8 @@ public abstract class Pessoa {
         this.contato = contato;
         this.cpf = cpf;
     }
+    
+   // public Pessoa() {}
 
     // Getters e Setters
     public int getId() {
