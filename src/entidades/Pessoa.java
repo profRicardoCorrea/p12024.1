@@ -9,6 +9,9 @@ public class Pessoa {
     // Construtor padrão
     public Pessoa() {
     }
+    public Pessoa(String nome) {
+    	this.nome=nome;
+    }
 
     // Construtor sobrecarregado
     public Pessoa(int id, String nome, String contato, String cpf) {
